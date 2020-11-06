@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>INSAT ACM Student Chapter</title>
+    <link rel="icon" href="https://insat.acm.org/img/logo.png">
+    <link rel="stylesheet" href="./style/bootstrap.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/linearicons.css">
+    <link rel="stylesheet" href="./style/pointer.css">
+    <link rel="stylesheet" href="./style/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+
+<body>
+    <div class="loading" id="loading" style="background-color: #fbfbfb;">
+        <div style="width:500px;margin:auto;vertical-align:middle;margin-top:25vh;">
+            <img src="./assets/loading2.gif" style="width:100%;display:block;margin:auto">
+        </div>
+    </div>
+    <span id="circle" class="circle"></span>
+    <header>
+        <div class="navbar navbar-expand-md menu fixed-top" id="men1">
+            <div class="container">
+                <a class="navbar-brand" href="https://insat.acm.org/#" id="navbarLogo">
+                    <img class="logo-alt-img" width="60px" src="./assets/logowhite.png" alt="logo">
+                </a>
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <svg class="btn" style="height:30px;width:auto;margin-bottom:10px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144pt" height="144pt" viewBox="0 0 144 144" version="1.1">
+                        <g id="surface10736206">
+                        <path id="path" style="stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 0 12 L 0 24 L 144 24 L 144 12 Z M 0 66 L 0 78 L 144 78 L 144 66 Z M 0 120 L 0 132 L 144 132 L 144 120 Z M 0 120 "/>
+                        </g>
+                    </svg>
+                        </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link linker" href="https://insat.acm.org/#about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linker" href="https://insat.acm.org/#posts">POSTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linker" href="https://insat.acm.org/#activities">ACTIVITIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linker" href="https://insat.acm.org/#contests">CONTESTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linker" href="https://insat.acm.org/#team">TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn" style="background-color: #039AD7;" href="https://insat.acm.org/login">LOGIN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn" style="background-color: #78C4DE;" href="https://insat.acm.org/signup">SIGN UP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header>
+        <div class="navbar navbar-expand-md menu fixed-top" id="men2" style="border:0px;position:fixed;top:0;background-color:#13659A;z-index:1">
+            <div class="container">
+                <a class="navbar-brand" href="https://insat.acm.org/#" id="navbarLogo">
+                    <img class="logo-alt-img" width="60px" src="./assets/logowhite.png" alt="logo">
+                </a>
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
+                    <svg class="btn" style="height:30px;width:auto;margin-bottom:10px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144pt" height="144pt" viewBox="0 0 144 144" version="1.1">
+                        <g id="surface10736206">
+                        <path id="path" style=" fill:white;stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 0 12 L 0 24 L 144 24 L 144 12 Z M 0 66 L 0 78 L 144 78 L 144 66 Z M 0 120 L 0 132 L 144 132 L 144 120 Z M 0 120 "/>
+                        </g>
+                    </svg>
+                        </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar2">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link linker2" id="do" href="https://insat.acm.org/#about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linker2" href="https://insat.acm.org/#posts">POSTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linker2" href="https://insat.acm.org/#activities">ACTIVITIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linker2" href="https://insat.acm.org/#contests">CONTESTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linker2" href="https://insat.acm.org/#team">TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn" style="background-color: #039AD7" href="https://insat.acm.org/login">LOGIN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn" style="background-color: #78C4DE" href="https://insat.acm.org/signup">SIGN UP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid" style="padding-top: 70px;background-color: white;">
+        <div class="row" style="padding-bottom: 25px;">
+            <div class="offset-sm-1 co1-12 col-sm-7">
+                <img src="./assets/acm.png" width="90%" alt="" id="bounce">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="offset-3 col-2 offset-sm-1 offset-md-2 col-sm-1">
+                        <div class="btn" id="btnStart">
+                            <a class="linker" href="#" style="font-size: 30px">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4" id=>
+                <img src="./assets/home.svg" alt="" id="welcomePhoto">
+            </div>
+        </div>
+    </div>
+    <div class="container" id="det">
+        <div class="row" id="about">
+            <div class="col-12" style="margin-top: 70px;">
+                <div class="row" id="aboutButtons">
+                    <div class="col-3 col-md-2">
+                        <h1>About Us</h1>
+                    </div>
+                    <div class="offset-sm-2 offset-md-6 col-2 col-md-1" style="margin-top: -12px">
+                        <a class="active" id="aboutAcmButton">
+                            <h2>ACM</h2>
+                        </a>
+                    </div>
+                    <div class="col-3 col-md-2 ">
+                        <a id="aboutAcmInsatButton">
+                            <h2>ACM INSAT</h2>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-1">
+                        <a id="awardsButton">
+                            <h2>AWARDS</h2>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="row" id="aboutAcm">
+                    <div class="col">
+                        <p class="parag" style="opacity: 0;">ACM, the Association for Computing Machinery is the world's largest scientific and educational computing society. It is an international organization for academic and scholarly interests in computer science, claiming nearly 100,000
+                            student and professional members as of 2019. And it is organized into over 171 local chapters and 37 Special Interest Groups (SIGs), through which it conducts most of its activities.</p>
+                    </div>
+                </div>
+                <div class="row" id="aboutAcmInsat" style="display:none;">
+                    <div class="col">
+                        <p>It all started with a contest and a group of ambitious students. On the 26th of February 2017, the 1st edition of INSAT CPC was held. A new experience, an unknown territory, and yet 33 teams of INSAT students have registered, thus
+                            marking a record of the university with the most participating teams in Tunisia.<br> After displaying such performance, the club was founded as “ACM INSAT” on the 12th of April 2017 with more than 200 members signing in from
+                            the start, and an INFO session was organised to introduce the club and present its two main goals, which remain the same as the Student Chapter was officialy chartered by ACM in July 2018.<br> The chapter organizes various
+                            activities such as technical talks, workshops, programming contests and many others. Participating enhances both student’s soft skills and technical skills in computing. the chapter also provides a natural setting to develop
+                            and demonstrate the leadership capabilities critical to students’ career development.</p>
+
+                    </div>
+                </div>
+                <div class="row" id="awards" style="display:none;">
+                    <div class="offset-md-1 col-1 my-auto">
+                        <div class="fa fa-angle-left" id="prevButton" style="font-size: 8vw;"></div>
+                    </div>
+                    <div class="col-9 col-md-8" style="background-color: #13659A;border-radius: 50px;">
+
+                        <div class="row h-100 prevAward" style="display: none;">
+                            <div class="col-4 my-auto">
+                                <img src="./assets/tcpc2018.png" style="background-color:white; border-radius:30px;width: 180px; max-width:100%;">
+                            </div>
+                            <div class="col-8 my-auto">
+                                <h3 style="margin-top: 15px;">National Cup, 4 Medals</h3>
+                                <p>ACM Tunisian Collegiate Programming Contest 2018 (TCPC), the qualification round to the regional ACM ACPC, hosted by ENISo - Sousse, June 2018.<br> Top INSAT Teams ranked 1st, 3rd, 5th and 9th.</p>
+                            </div>
+                        </div>
+
+                        <div class="row h-100 selectedAward" style="display: flex;">
+                            <div class="col-4 col-lg-3 my-auto">
+                                <img src="./assets/tops2018.png" style="background-color: white; border-radius:10px; width:150px; max-width:100%;">
+                            </div>
+                            <div class="col-8 col-lg-9 my-auto">
+                                <h3 style="margin-top: 15px;">TOPS, 2 Medals</h3>
+                                <p>Tunisian Olympiad in Problem Solving 2018, the qualification round to the regional AOPS, hosted by the Tunisian Ministry of Higher Education and Scientific Research - Tunis, March 2018.<br> Top INSAT Students ranked 1st
+                                    and 3rd.</p>
+                            </div>
+                        </div>
+
+                        <div class="row h-100 nextAward" style="display: none;">
+                            <div class="col-4 col-md-3 my-auto">
+                                <img src="./assets/tekuppsc2018.png" style="background-color: white; border-radius:40px; width: 120px; max-width:100%;">
+                            </div>
+                            <div class="col-8 col-md-9 my-auto">
+                                <h3 style="margin-top: 15px;">TEK-UP PSC, 2 Medals</h3>
+                                <p>TEK-UP Problem Solving Challenge 2018 (PSC), a series of training sessions followed by a programming contest, hosted by TEK-UP University - Ariana, January 2018.<br> Top INSAT teams ranked 1st, 2nd and 3rd.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-1 my-auto">
+                        <div class="fa fa-angle-right" id="nextButton" style="font-size: 8vw;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="d-flex justify-content-end" style="font-family: MyriadProSemiBold;">Check membership benefits
+                            <a href="https://insat.acm.org/posts/Chapter-membership-benefits" target="_blank" class="lnr lnr-arrow-right-circle swing" style="margin: 0px 0px 0px 10px;font-size: 25px;color: #13659A;font-weight: 600;"></a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="posts">
+            <div class="col-12" style="margin-top: 70px;">
+                <h1>Posts</h1>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="img-wrapper">
+                            <img class="img-post img-fluid" style="min-height: 148px;height:400px;" src="./assets/28ccacb48ecd84de297642c65d13c82c.jpeg">
+                            <div class="postHovered">
+                                <div class="d-flex justify-content-end post-categorie">EVENTS</div>
+                                <div class="post-title" style="font-size: 24px;">ACM Members Winter Cup 2020 General Assembly</div>
+                                <div class="post-date">20 Jan , 2020</div>
+                                <div class="post-description" style="display: flex;">Winter Cup 2020 is the second edition of the competitive programming contest, Winter Cup. It is THE opportunity to let ...</div>
+                                <div>
+                                    <a href="https://insat.acm.org/posts/ACM-Members-Winter-Cup-2020-General-Assembly" target="_blank"><i class="fa fa-plus-circle" style="background-color: white;border-radius: 50%;color: #78C4DE; margin-left: 6%;font-size: 22px;"></i></a>
+                                </div>
+                                <div class="btn btn-post offset-9 col-3"><a href="https://insat.acm.org/events" target="_blank">Past Events</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="row h-100">
+                            <div class="col-12" id="col">
+                                <div class="img-wrapper" style="margin-top: 4%;">
+                                    <img class="img-post img-fluid" style="height:195px;width:100%;" src="./assets/a22bf70a33b70aaea66519fc43477d66.jpeg">
+                                    <div class="postHovered">
+                                        <div class="d-flex justify-content-end post-categorie" style="font-size: 22px;">NEWS</div>
+                                        <div class="post-title">New instagram account</div>
+                                        <div class="post-date">24 Jan , 2020</div>
+                                        <div class="post-description">We are now on instagram 🤩🎉</div>
+                                        <div><a href="https://insat.acm.org/posts/New-instagram-account" target="_blank"><i class="fa fa-plus-circle" style="color: #78C4DE; margin-left: 6%;font-size: 22px;background-color: white;border-radius: 50%;"></i></a></div>
+                                        <div class="btn btn-post offset-9 col-3 offset-lg-7 col-lg-4"><a href="https://insat.acm.org/news" target="_blank">Past Events</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" id="col2">
+                                <div class="img-wrapper">
+                                    <img class="img-post img-fluid" style="height:195px;width:100%" src="./assets/f6de96d89c4a2d87dabb972358d5a177.jpeg">
+                                    <div class="postHovered">
+                                        <div class="d-flex justify-content-end post-categorie" style="font-size: 22px;">ANNOUNCEMENTS</div>
+                                        <div class="post-title">Weekly feedback</div>
+                                        <div class="post-date">23 Mar , 2020</div>
+                                        <div class="post-description">This will be our new weekly section. Through this section, we hope to reach our members better and get their feedback ...</div>
+                                        <div><a href="https://insat.acm.org/posts/Weekly-feedback" target="_blank"><i class="fa fa-plus-circle" style="background-color: white;border-radius: 50%;color: #78C4DE; margin-left: 6%;font-size: 22px;"></i></a></div>
+                                        <div class="btn btn-post offset-9 col-3 offset-lg-7 col-lg-4"><a href="https://insat.acm.org/announcements" target="_blank">Past Events</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="activities">
+            <div class="container-fluid" style="margin-top: 60px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12" style="margin-top: 20px;margin-bottom: 10px;">
+                            <h1>Activities</h1>
+                        </div>
+
+                        <div class="row" id="drop">
+
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="card" style="margin:0;width:100%">
+                                    <h4 class="tropdown">HOUR OF CODE</h4>
+                                    <p class="parag" style="opacity: 0;" id="drop2">Hour of Code is a global initiative that aims to teach children, mainly primary school students, some aspect of programming within one Hour. For this year, we visited a center for children who live in harsh family environnement.
+                                        Our goal was to show to these disadvantaged kids the powers of software and inspire them to take up coding.</p>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="card" style="margin:0;width:100%">
+                                    <h4 class="tropdown">DATA OVERFLOW</h4>
+                                    <p class="parag" style="opacity: 0;" id="drop3">The Data Overflow project is a collaboration between ACM INSAT Student Chapter and IEEE INSAT Computer Society Chapter.<br> It is a program that consists of weekly training sessions held in the National Institute of
+                                        Applied Science and Technology welcoming anyone interested in Data Science. Through these open doors, we hope to reach the biggest number of students and create a wide community that exchanges knowledge and experience
+                                        in Data Science and related fields.<br> The project will be concluded with a three-day conference featuring a 48-hour entrepreneurship Bootcamp for AI oriented solutions , and a 24-hour technical AI hackathon.
+                                        <br>Visit <a style="color:black;" href="https://dataoverflow.tech/" target="_blank">DataOverflow</a> website now !! </p>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="card" style="margin:0;width:100%">
+                                    <h4 class="tropdown">THE NEW GENERATION PROGRAM</h4>
+                                    <p class="parag" style="opacity: 0" id="drop1">The New Generation Program aims to train the next generation of competitive problem solvers. Our goal is to qualify for the ICPC, and so far we managed to obtain many first places nationally and regionally. We aim with
+                                        this program to raise champions of the same caliber.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin:0;padding:0">
+        <div class="row" id="contests">
+            <div class="col-12" style="margin-top: 70px;margin-left:120px;">
+                <h1>Contests</h1>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="contestLine offset-md-1 col-12 col-sm-6 col-md-5" style="margin:0;width:100%">
+                        <div class="aboutus" id="about" style="padding:0;padding-top:2%;padding-bottom:0;margin-bottom:0;width:100%">
+
+                            <div id="wintercup" class="contests">
+
+
+                                <div class="wintcont">
+
+                                    <div class="layer" style="padding:12%;padding-top:0;padding-bottom:5%;width:100%">
+                                        <div class="triangle"></div>
+                                        <h1 style="size:1.2vw;color:white;" class="wintitle">WinterCup</h1>
+                                        <p1 style="color:white;margin-top:2%;size:1vw">The Winter Cup is a competition that revolves around problem solving abilities and advanced algorithms knowledge. It is a teams competition where each team have to solve more algorithmic problems faster, using C/C++
+                                            or Java!</p1>
+                                        <div class="button" id="winlink">
+                                            <h3>Discover Here</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div id="shesolves" class="contests">
+
+
+                                <div class="wintcont">
+
+                                    <div class="layer" style="padding:12%;padding-top:5%;padding-bottom:5%;">
+                                        <h1 style="size:1.2vw;color:white;" class="wintitle">SheSolves</h1>
+                                        <p1 style="color:white;padding-top:2%;margin-top:-2px;size:1;">SheSolves is a cross university programming competition initiated in 2019 by INSAT ACM STUDENT CHAPTER and IEEE WIE INSAT Student Affinity Group in the purpose of introducing female university and high school students
+                                            to competitive programming and encouraging them to participate in bigger regional and nation wide contests and improve their problem solving skills. This year SheSolves will be on the 26th of January 2020 at
+                                            INSAT (National Institute of Applied Science and Technology).</p1>
+                                        <div class="button" id="shesol">
+                                            <h3>Discover Here</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container" stye="margin:auto;">
+        <div class="row" id="team">
+            <div class="col" style="margin-top: 70px;">
+                <h1>Team</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-2 col-sm-1">
+                                <div class="fa fa-angle-left" style="font-size:8vw;color:black;margin-top: 170%" id="prev"></div>
+                            </div>
+                            <div class="col-8 col-sm-10">
+                                <div id="carousel">
+                                    <div class="hideLeft">
+                                        <div class="flip-card-container" style="position:relative;width:100%">
+                                            <div class="flip-card" style="position:relative">
+                                                <div class="flip-card-front">
+                                                    <img src="assets/ines.png " alt=" ">
+                                                </div>
+                                                <div class="flip-card-back " style="background-color: white;">
+                                                    <div class="flip-card-cont" style="background-color: white;">
+                                                        <h2>Ines Ouled Elhaj</h2>
+
+                                                        <p>Community Manager</p>
+                                                        <div class="sm " style="position:relative;height:50px;width:80%;background-color:transparent; ">
+                                                            <a href="# "><i class="fab fa-facebook-f "></i></a>
+                                                            <a href="# "><i class="fab fa-linkedin "></i></a>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hideLeft">
+                                        <div class="flip-card-container" style="position:relative;width:100%">
+                                            <div class="flip-card" style="position:relative">
+                                                <div class="flip-card-front">
+                                                    <img src="assets/bechir.jpg " alt=" ">
+                                                </div>
+                                                <div class="flip-card-back " style="background-color: white;">
+                                                    <div class="flip-card-cont" style="background-color: white;">
+                                                        <h2>Bechir Brahem</h2>
+
+                                                        <p>HR Manager</p>
+                                                        <div class="sm " style="position:relative;height:50px;width:80%;background-color:transparent; ">
+                                                            <a href="# "><i class="fab fa-facebook-f "></i></a>
+                                                            <a href="# "><i class="fab fa-linkedin "></i></a>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prevLeftSecond">
+                                        <div class="flip-card-container" style="position:relative;width:100%">
+                                            <div class="flip-card" style="position:relative">
+                                                <div class="flip-card-front">
+                                                    <img src="assets/taieb.jpg " alt=" ">
+                                                </div>
+                                                <div class="flip-card-back " style="background-color: white;">
+                                                    <div class="flip-card-cont" style="background-color: white;">
+                                                        <h2>Mohamed Taieb Slama</h2>
+
+                                                        <p>Web Master</p>
+                                                        <div class="sm " style="position:relative;height:50px;width:80%;background-color:transparent; ">
+                                                            <a href="# "><i class="fab fa-facebook-f "></i></a>
+                                                            <a href="# "><i class="fab fa-linkedin "></i></a>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prev">
+                                        <div class="flip-card-container " style="position:relative;width:80% ">
+                                            <div class="flip-card " style="position:relative ">
+                                                <div class="flip-card-front ">
+                                                    <img src="assets/amir.jpg " alt=" ">
+                                                </div>
+                                                <div class="flip-card-back " style="background-color: white;">
+                                                    <div class="flip-card-cont" style="background-color: white;">
+                                                        <h2>Amir Khemissi</h2>
+
+                                                        <p>Treasurer</p>
+                                                        <div class="sm " style="position:relative;height:50px;width:100%;background-color:transparent; ">
+                                                            <a href="# "><i class="fab fa-facebook-f "></i></a>
+                                                            <a href="# "><i class="fab fa-linkedin "></i></a>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selected ">
+
+                                        <div class="flip-card-container " style="position:relative;width:80% ">
+                                            <div class="flip-card " style="position:relative ">
+                                                <div class="flip-card-front ">
+                                                    <img src="assets/meriem.jpg " alt=" ">
+                                                </div>
+                                                <div class="flip-card-back " style="background-color: white;">
+                                                    <div class="flip-card-cont" style="background-color: white;">
+                                                        <h2>Meriem Zhang</h2>
+
+                                                        <p>President</p>
+                                                        <div class="sm " style="position:relative;height:50px;width:100%;background-color:transparent; ">
+                                                            <a href="# "><i class="fab fa-facebook-f "></i></a>
+                                                            <a href="# "><i class="fab fa-linkedin "></i></a>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="next">
+                                        <div class="flip-card-container " style="position:relative;width:100% ">
+                                            <div class="flip-card " style="position:relative ">
+                                                <div class="flip-card-front ">
+                                                    <img src="assets/ons.jpg " alt=" ">
+                                                </div>
+                                                <div class="flip-card-back " style="background-color: white; ">
+                                                    <div class="flip-card-cont " style="background-color: white; ">
+                                                        <h2>Ons Sellami</h2>
+
+                                                        <p>Vice President</p>
+                                                        <div class="sm " style="position:relative;height:50px;width:80%;background-color:transparent; ">
+                                                            <a href="# "><i class="fab fa-facebook-f "></i></a>
+                                                            <a href="# "><i class="fab fa-linkedin "></i></a>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nextRightSecond ">
+                                        <div class="flip-card-container " style="position:relative;width:100% ">
+                                            <div class="flip-card " style="position:relative ">
+                                                <div class="flip-card-front ">
+                                                    <img src="assets/yasmine.jpg " alt=" ">
+                                                </div>
+                                                <div class="flip-card-back " style="background-color: white; ">
+                                                    <div class="flip-card-cont " style="background-color: white; ">
+                                                        <h2>Yasmine Doss</h2>
+
+                                                        <p>Secretary</p>
+                                                        <div class="sm " style="position:relative;height:50px;width:80%;background-color:transparent; ">
+                                                            <a href="# "><i class="fab fa-facebook-f "></i></a>
+                                                            <a href="# "><i class="fab fa-linkedin "></i></a>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hideRight ">
+
+                                        <div class="flip-card-container " style="position:relative;width:100% ">
+                                            <div class="flip-card " style="position:relative ">
+                                                <div class="flip-card-front ">
+                                                    <img src="assets/farouk.jpg " alt=" ">
+                                                </div>
+                                                <div class="flip-card-back " style="background-color: white; ">
+                                                    <div class="flip-card-cont " style="background-color: white; ">
+                                                        <h2>Faoruk Labidi</h2>
+
+                                                        <p>Media Manager</p>
+                                                        <div class="sm " style="position:relative;height:50px;width:80%;background-color:transparent; ">
+                                                            <a href="# "><i class="fab fa-facebook-f "></i></a>
+                                                            <a href="# "><i class="fab fa-linkedin "></i></a>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nexthideRight ">
+                                        <div class="flip-card-container " style="position:relative;width:100% ">
+                                            <div class="flip-card " style="position:relative ">
+                                                <div class="flip-card-front ">
+                                                    <img src="assets/achraf.jpg " alt=" ">
+                                                </div>
+                                                <div class="flip-card-back " style="background-color: white; ">
+                                                    <div class="flip-card-cont " style="background-color: white; ">
+                                                        <h2>Achraf Karboul</h2>
+
+                                                        <p>Logistics Manager</p>
+                                                        <div class="sm " style="position:relative;height:50px;width:80%;background-color:transparent; ">
+                                                            <a href="# "><i class="fab fa-facebook-f "></i></a>
+                                                            <a href="# "><i class="fab fa-linkedin "></i></a>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 col-sm-1 ">
+                                <div class="fa fa-angle-right " style="font-size:8vw;color:black;margin-top: 170% " id="next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="map " style="width:100%;height:auto;z-index:100 ">
+
+        <iframe id="map " style="width:100%;height:70vh;margin-bottom:-25vh;z-index:100 " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12771.930361487692!2d10.196202!3d36.842893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4153c4733f285343!2sInstitut%20national%20des%20sciences%20appliqu%C3%A9es%20et%20de%20technologie!5e0!3m2!1sfr!2stn!4v1599236050705!5m2!1sfr!2stn "
+            width="600 " height="450 " frameborder="0 " allowfullscreen=" " aria-hidden="false " tabindex="0 " z-index="100 "></iframe>
+    </div>
+    <footer style="background-image: url(./assets/footerindex.png);position: relative;margin-top: 3%; ">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="offset-1 col-2 col-xl-1 ">
+                    <img style="margin-top: 40px; " src="./assets/logowhite.png ">
+                </div>
+                <div class="offset-md-1 offset-lg-0 col-sm-7 col-md-5 d-none d-sm-block " style="margin-top: 50px;margin-left: 2%; ">
+                    <h3 style="font-size: 22px;text-decoration: underline; ">Contact Us</h3>
+                    <div class="row ">
+                        <div class="col-7 col-lg-6 d-none d-sm-block ">
+                            <div class="row ">
+                                <div class="col-sm-3 ">
+                                    <span class="lnr lnr-map-marker " style="color: white;font-size: 30px; "></span>
+                                </div>
+                                <div class="col-sm-9 ">
+                                    <p style="font-size: 16px; "><b style="font-family: MyriadProBoldCondensed;font-size: 18px; ">INSAT,Tunisia</b><br>Centre Urbain Nord BP,<br>Tunis Cedex 1080</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-md-5 col-lg-6 ">
+                            <div class="row " style="margin-top: 35px; ">
+                                <div class="col-12 ">
+                                    <div class="row ">
+                                        <div class="col-sm-2 col-lg-2 ">
+                                            <span class="lnr lnr-phone-handset " style="color: white;font-size: 30px; "></span>
+                                        </div>
+                                        <div class="col-sm-10 col-lg-10 ">
+                                            <a href="tel:+216 28 107 680 ">
+                                                <p style="font-family: MyriadProBoldCondensed;font-size: 18px; ">+216 27 101 400</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-none d-xl-block ">
+                                    <div class="row ">
+                                        <div class="col-sm-1 col-lg-2 ">
+                                            <span class="lnr lnr-envelope " style="color: white;font-size: 30px; "></span>
+                                        </div>
+                                        <div class="col-sm-11 col-lg-10 ">
+                                            <a href="mailto:insatacmsc@gmail.com ">
+                                                <p style="font-family: MyriadProBoldCondensed;font-size: 18px; ">insatacmsc@gmail.com</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-xl-1 col-md-3 col-xl-2 d-none d-md-block ">
+                    <div class="row " style="margin-top: 150px; ">
+                        <div class="col ">
+                            <a href="https://www.linkedin.com/company/insatacm/about/ " target="_blank ">
+                                <span class="social-icon fab fa-linkedin "></span>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="https://www.youtube.com/channel/UCn_mR1PIey0F2E3_6F1CNJQ " target="_blank ">
+                                <span class="social-icon fab fa-youtube "></span>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="https://www.facebook.com/insatacm/ " target="_blank ">
+                                <span class="social-icon fab fa-facebook-square "></span>
+                            </a>
+                        </div>
+
+                        <div class="col ">
+                            <a href="https://www.instagram.com/acm_insat_sc/?hl=fr " target="_blank ">
+                                <span class="social-icon fab fa-instagram "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-sm-none " style="margin-top: -40px; ">
+                <div class="col-9 " style="margin-top: 20px;margin-left: 25%; ">
+                    <div class="row ">
+                        <div class="col ">
+                            <a href="https://www.linkedin.com/company/insatacm/about/ " target="_blank ">
+                                <span class="social-icon fab fa-linkedin "></span>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="https://www.youtube.com/channel/UCn_mR1PIey0F2E3_6F1CNJQ " target="_blank ">
+                                <span class="social-icon fab fa-youtube "></span>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="https://www.facebook.com/insatacm/ " target="_blank ">
+                                <span class="social-icon fab fa-facebook-square "></span>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="https://www.instagram.com/acm_insat_sc/?hl=fr " target="_blank ">
+                                <span class="social-icon fab fa-instagram "></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="col-12 text-center " id="copyrights " style="padding-top:8px;">Copyright ©
+            <script>
+                document.write(new Date().getFullYear());
+            </script>2020 All rights reserved | made by ACM INSAT</p>
+
+    </footer>
+
+
+    <script src="./js/jquery-2.1.3.min.js.télécharger "></script>
+    <script src="./js/bootstrap.min.js.télécharger "></script>
+    <script src="./js/main1.js "></script>
+
+
+</body>
+
+</html>
