@@ -22,7 +22,17 @@ jQuery(document).ready(function() {
         yp += ((mouseY - yp) / 6);
         $("#circle").css({ left: xp + 'px', top: yp + 'px' });
     }, 20);
-
+    setInterval(function() {
+        if ($(window).width() < 900) {
+            $("#tobehidden").hide();
+            $("#tobeshown").css("width", "100%");
+            $(".foot").show();
+        } else {
+            $("#tobehidden").show();
+            $("#tobeshown").css("width", "60%");
+            $(".foot").hide();
+        }
+    }, 20);
 });
 $("#loading").delay(7000).fadeOut(1000);
 $("body").css("overflow", "hidden");
