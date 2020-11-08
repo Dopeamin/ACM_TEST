@@ -1,10 +1,14 @@
 //loader
 $(window).load(function() {
     $("#loading").fadeOut(1000);
+    $("body").css("overflow-y", "visible");
+    $(".titl").slideDown(1000);
+    $(".parg").slideDown(1000);
 });
 
 jQuery(document).ready(function() {
-
+    $(".titl").hide();
+    $(".parg").hide();
     $("#men2").css("opacity", "0");
     $("#tobeshownnn").hide();
     $("#men2").css("max-height", "0px");
@@ -123,7 +127,6 @@ jQuery(document).ready(function() {
         }
     }, 20);
 });
-
 $("body").css("overflow", "hidden");
 
 function timeFunction() {
