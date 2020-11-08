@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>INSAT ACM Student Chapter</title>
+    <title>Sign In</title>
     <link rel="icon" href="https://insat.acm.org/img/logo.png">
     <link rel="stylesheet" href="./style/bootstrap.css">
     <link rel="stylesheet" href="./style/main1.css">
@@ -22,8 +22,8 @@
 
 <body>
     <div class="loading" id="loading" style="background-color: #fbfbfb;">
-        <div style="width:500px;margin:auto;vertical-align:middle;margin-top:25vh;">
-            <img src="./assets/loading2.gif" style="width:100%;display:block;margin:auto">
+        <div style="width:100%px;max-width: 500px;margin:auto;vertical-align:middle;margin-top:25vh;object-fit: cover;">
+            <img src="./assets/Loadingscreen.gif" style="width:100%;display:block;margin:auto">
         </div>
     </div>
     <span id="circle" class="circle"></span>
@@ -43,30 +43,29 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link linker" href="https://insat.acm.org/#about">ABOUT US</a>
+                            <a class="nav-link linker2" id="do" href="./index.html#about">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linker" href="https://insat.acm.org/#posts">POSTS</a>
+                            <a class="nav-link linker2" href="./index.html#posts">POSTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linker" href="https://insat.acm.org/#activities">ACTIVITIES</a>
+                            <a class="nav-link linker2" href="./index.html#activities">ACTIVITIES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linker" href="https://insat.acm.org/#contests">CONTESTS</a>
+                            <a class="nav-link linker2" href="./index.html#contests">CONTESTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linker" href="https://insat.acm.org/#team">TEAM</a>
+                            <a class="nav-link linker2" href="./index.html#team">TEAM</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn" style="background-color: #039AD7;" href="https://insat.acm.org/login">LOGIN</a>
+                            <a class="nav-link btn" style="background-color: #039AD7" href="./signin.html">LOGIN</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn" style="background-color: #78C4DE;" href="https://insat.acm.org/signup">SIGN UP</a>
+                            <a class="nav-link btn" style="background-color: #78C4DE" href="./signin.html#signup" id="signn">SIGN UP</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
     </header>
     <header>
         <div class="navbar navbar-expand-md menu fixed-top" id="men2" style="border:0px;position:fixed;top:0;background-color:#13659A;z-index:1">
@@ -84,25 +83,25 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar2">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link linker2" id="do" href="https://insat.acm.org/#about">ABOUT US</a>
+                            <a class="nav-link linker2" id="do" href="./index.html#about">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linker2" href="https://insat.acm.org/#posts">POSTS</a>
+                            <a class="nav-link linker2" href="./index.html#posts">POSTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linker2" href="https://insat.acm.org/#activities">ACTIVITIES</a>
+                            <a class="nav-link linker2" href="./index.html#activities">ACTIVITIES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linker2" href="https://insat.acm.org/#contests">CONTESTS</a>
+                            <a class="nav-link linker2" href="./index.html#contests">CONTESTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linker2" href="https://insat.acm.org/#team">TEAM</a>
+                            <a class="nav-link linker2" href="./index.html#team">TEAM</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn" style="background-color: #039AD7" href="https://insat.acm.org/login">LOGIN</a>
+                            <a class="nav-link btn" style="background-color: #039AD7" href="./signin.html">LOGIN</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn" style="background-color: #78C4DE" href="https://insat.acm.org/signup">SIGN UP</a>
+                            <a class="nav-link btn" style="background-color: #78C4DE" href="./signin.html#signup" id="signnn">SIGN UP</a>
                         </li>
                     </ul>
                 </div>
@@ -271,13 +270,13 @@
             <div class="d-flex justify-content-center">
                 <img style="width: 200px;" src="./assets/signin.png" id="bounce">
             </div>
-            <div class="input" style="z-index:11;">
-                <input style="z-index:11;" class="form" name="uname" placeholder="Username" type="text">
-                <input style="z-index:11;" class="form" name="password" placeholder="Password" type="password">
+            <div class="input" style="z-index:11;display:block;">
+                <input style="z-index:11;width:100%;" class="form" name="uname" placeholder="Username" type="text">
+                <input style="z-index:11;width:100%;" class="form" name="password" placeholder="Password" type="password">
                 <button style="z-index:11;" class="login_btn" value="Log In" name="login_btn">Login</button>
             </div>
             <div class="col-12" style="z-index:11;">
-                <p>You don't have an account? <a href="https://insat.acm.org/signup">Sign up</a> for FREE!<br>
+                <p>You don't have an account? <a href="#signup" id="logg">Sign up</a> for FREE!<br>
                     <a href="https://insat.acm.org/resendconfirm">Resend confirmation E-mail.</a><br>
                     <a href="https://insat.acm.org/password_resetting">Forgot your password ?</a></p>
             </div>
@@ -286,11 +285,46 @@
             </div>
 
         </div>
+        <div class="card-container" style="float:left;" id="tobeshown2">
+            <div class="d-flex justify-content-center">
+                <img style="width: 200px;" src="./assets/signup.png" id="bounce">
+            </div>
+            <div class="input" style="z-index:11;position: flex;margin-top:10px;">
+                <input style="z-index:11;" class="form" name="uname" placeholder="Username" type="text">
+                <input style="z-index:11;" class="form" name="uemail" placeholder="Email" type="text">
+                <input style="z-index:11;" class="form" name="fname" placeholder="Firstname" type="text">
+                <input style="z-index:11;" class="form" name="lname" placeholder="Lastname" type="text">
+                <input style="z-index:11;" class="form" name="password" placeholder="Password" type="password">
+                <input style="z-index:11;" class="form" name="cpassword" placeholder="Confirm Password" type="password">
+                <select class="form" name="registration[occupation]" class="widget form-control"><option value="Student">university/college Student</option><option value="Highschool Student">Highschool Student</option><option value="Professional">Professional</option></select>
+                <input style="z-index:11;" class="form" name="estab" placeholder="Establishement" type="text">
+                </br>
+                <button style="z-index:11;" class="login_btn" value="Log In" name="login_btn" id="logg">Sign In</button>
+            </div>
+            <div class="col-12" style="z-index:11;margin-top:-10px" id="tobeshownn">
+                <p>Already have an account? <a href="#" id="loggg">Sign In</a><br>
+            </div>
+            <div class="foot">
 
-        <div class="card-container" id="tobehidden" style="float:right;background-image:url('./assets/blue_background.jpeg');width:40%;">
-            <div class="content" style="margin-top:130px;padding:10px">
-                <h1 style="font-size:42;font-family: 'Open Sans',sans-serif;color:white;font-weight: 800;">Welcome Back !</h1>
-                <p>To keep being connected with us please enter your information</p>
+            </div>
+
+        </div>
+        <div class="card-container" id="tobehidden" style="top:0px;transform: translateX(150%);background-image:url('./assets/blue_background.jpeg');width:40%;">
+            <div class="content" style="margin-top:130px;padding:10px;position: absolute;right:0px;" id="tobeshownnn2">
+                <h1 id="titl" style="font-size:42;font-family: 'Open Sans',sans-serif;color:white;font-weight: 800;">Welcome Back !</h1>
+                <p id="parg">To keep being connected with us please enter your information</p>
+                </br>
+
+            </div>
+            <div class="content" style="margin-top:130px;padding:10px;position: absolute;right:0px;" id="tobeshownnn">
+                <h1 id="titl" style="font-size:42;font-family: 'Open Sans',sans-serif;color:white;font-weight: 800;">Hi Friend !</h1>
+                <p id="parg">To Join us please fill this form</p>
+                </br>
+                <div>
+                    <p>In case u already have an account : </p>
+                    <a href="#"><button style="z-index:11;" class="login_btn2" id="logggg">Login</button></a>
+                </div>
+
             </div>
 
         </div>

@@ -1162,7 +1162,7 @@ p {
     margin-top: 40px;
     width: 70%;
     padding: 0;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .form {
@@ -1170,7 +1170,7 @@ p {
     padding: 10px;
     border: 1px solid gray;
     border-radius: 10px;
-    width: 100%;
+    width: 45%;
     height: 100%;
     outline: none;
     margin-bottom: 20px;
@@ -1224,6 +1224,24 @@ p {
     border: 1px solid #13659A;
 }
 
+.login_btn2 {
+    background-color: #13659A;
+    border: 0px;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.login_btn2:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
 .col-12 {
     text-align: left;
     padding-left: 40px;
@@ -1231,4 +1249,40 @@ p {
 
 .col-12 a:hover {
     color: black;
+}
+
+@keyframes goLeft {
+    0% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes goLeft2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(150%);
+    }
+}
+
+@keyframes goRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(66.666666666%);
+    }
+}
+
+@keyframes goRight2 {
+    0% {
+        transform: translateX(66.666666666%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

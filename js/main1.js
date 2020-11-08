@@ -1,10 +1,93 @@
 //loader
 $(window).load(function() {
-    $(".preloader").fadeOut("slow");
+    $("#loading").fadeOut(1000);
 });
+
 jQuery(document).ready(function() {
+
     $("#men2").css("opacity", "0");
+    $("#tobeshownnn").hide();
     $("#men2").css("max-height", "0px");
+    $("#tobeshown2").hide();
+    if (window.location.href.indexOf("signup") > -1) {
+        $("#tobehidden").css("animation", "goLeft 1s ease-in-out forwards");
+        $("#tobeshown").css("animation", "goRight 1s ease-in forwards");
+        $("#tobeshownnn2").hide();
+        $("#tobeshownnn").show();
+        $("#tobeshown").fadeOut(500);
+        $("#tobeshown2").delay(500).fadeIn(500);
+        if ($(window).width() >= 900) {
+            $("#tobeshown2").delay(500).css("animation", "goRight 0.5s ease-out forwards");
+        } else {
+
+            $("#tobeshown2").css("animation", "goRight 0s reverse forwards");
+        }
+    } else {
+
+    }
+
+    $("#logg").click(function() {
+        $("#tobehidden").css("animation", "goLeft 1s ease-in-out forwards");
+        $("#tobeshown").css("animation", "goRight 1s ease-in forwards");
+        $("#tobeshownnn2").fadeOut(500);
+        $("#tobeshownnn").delay(500).fadeIn(500);
+        $("#tobeshown").fadeOut(500);
+        $("#tobeshown2").delay(500).fadeIn(500);
+        if ($(window).width() >= 900) {
+            $("#tobeshown2").delay(500).css("animation", "goRight 0.5s ease-out forwards");
+        } else {
+
+            $("#tobeshown2").css("animation", "goRight 0s reverse forwards");
+        }
+    })
+    $("#signn").click(function() {
+        $("#tobehidden").css("animation", "goLeft 1s ease-in-out forwards");
+        $("#tobeshown").css("animation", "goRight 1s ease-in forwards");
+        $("#tobeshownnn2").fadeOut(500);
+        $("#tobeshownnn").delay(500).fadeIn(500);
+        $("#tobeshown").fadeOut(500);
+        $("#tobeshown2").delay(500).fadeIn(500);
+        if ($(window).width() >= 900) {
+            $("#tobeshown2").delay(500).css("animation", "goRight 0.5s ease-out forwards");
+        } else {
+
+            $("#tobeshown2").css("animation", "goRight 0s reverse forwards");
+        }
+    })
+    $("#signnn").click(function() {
+        $("#tobehidden").css("animation", "goLeft 1s ease-in-out forwards");
+        $("#tobeshown").css("animation", "goRight 1s ease-in forwards");
+        $("#tobeshownnn2").fadeOut(500);
+        $("#tobeshownnn").delay(500).fadeIn(500);
+        $("#tobeshown").fadeOut(500);
+        $("#tobeshown2").delay(500).fadeIn(500);
+        if ($(window).width() >= 900) {
+            $("#tobeshown2").delay(500).css("animation", "goRight 0.5s ease-out forwards");
+        } else {
+
+            $("#tobeshown2").css("animation", "goRight 0s reverse forwards");
+        }
+    })
+    $("#loggg").click(function() {
+        $("#tobehidden").css("animation", "goLeft2 1s  ease-in-out forwards");
+        $("#tobeshown2").css("animation", "goRight2 0.5s  ease-in forwards");
+        $("#tobeshownnn").fadeOut(500);
+        $("#tobeshownnn2").delay(500).fadeIn(500);
+        $("#tobeshown2").fadeOut(500);
+        $("#tobeshown").delay(500).fadeIn(500);
+        $("#tobeshown").css("animation", "goRight2  0.5s ease-out forwards");
+
+    })
+    $("#logggg").click(function() {
+        $("#tobehidden").css("animation", "goLeft2 1s  ease-in-out forwards");
+        $("#tobeshown2").css("animation", "goRight2 0.5s  ease-in forwards");
+        $("#tobeshownnn").fadeOut(500);
+        $("#tobeshownnn2").delay(500).fadeIn(500);
+        $("#tobeshown2").fadeOut(500);
+        $("#tobeshown").delay(500).fadeIn(500);
+        $("#tobeshown").css("animation", "goRight2  0.5s ease-out forwards");
+
+    })
     $(this).scrollTop(0, 0);
     var mouseX = 0,
         mouseY = 0;
@@ -26,15 +109,21 @@ jQuery(document).ready(function() {
         if ($(window).width() < 900) {
             $("#tobehidden").hide();
             $("#tobeshown").css("width", "100%");
+            $("#tobeshown2").css("width", "100%");
+            $("#tobeshown2").css("animation", "goRight 0s reverse forwards");
             $(".foot").show();
+            $("#tobeshownn").show();
         } else {
             $("#tobehidden").show();
+            $("#tobeshown2").css("animation", "goRight 0s  forwards");
             $("#tobeshown").css("width", "60%");
+            $("#tobeshown2").css("width", "60%");
             $(".foot").hide();
+            $("#tobeshownn").hide();
         }
     }, 20);
 });
-$("#loading").delay(7000).fadeOut(1000);
+
 $("body").css("overflow", "hidden");
 
 function timeFunction() {
