@@ -146,9 +146,10 @@ html {
     width: 99vw;
     height: auto;
     background-image: url("../assets/cov.jpg");
+    background-size: cover;
+    background-origin: border-box;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #shesolves {

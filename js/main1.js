@@ -5,8 +5,13 @@ $(window).load(function() {
     $(".titl").slideDown(1000);
     $(".parg").slideDown(1000);
 });
+$('a[href*=\\#]').on('click', function(event) {
+    event.preventDefault();
+    $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+});
 
 jQuery(document).ready(function() {
+
     $(".titl").hide();
     $(".parg").hide();
     $("#men2").css("opacity", "0");
@@ -150,9 +155,20 @@ $(window).scroll(function() {
         wH = $(window).height(),
         wS = $(this).scrollTop();
     if (wS > (hT + hH - wH - 1200)) {
-        $(".contests").css("animation", "slidedown2 4s ")
+        $("#wintercup").css("animation", "slidedown2 3s ease-in-out")
     } else {
-        $(".contests").css("animation", "slideUp 0.5s ease-out")
+        $("#wintercup").css("animation", "slideUp 0.5s ease-out")
+    }
+});
+$(window).scroll(function() {
+    var hT = $('#wintercup').offset().top,
+        hH = $('#wintercup').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+    if (wS > (hT + hH - wH - 1200)) {
+        $("#shesolves").css("animation", "slidedown2 3s ease-in-out ")
+    } else {
+        $("#shesolves").css("animation", "slideUp 0.5s ease-out")
     }
 });
 
