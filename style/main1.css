@@ -152,6 +152,43 @@ html {
     background-repeat: no-repeat;
 }
 
+@keyframes slidedown {
+    0% {
+        opacity: 0;
+        max-height: 0px;
+    }
+    10% {
+        opacity: 0;
+        max-height: 0px;
+    }
+    100% {
+        opacity: 1;
+        max-height: 100px;
+    }
+}
+
+@keyframes slidedown2 {
+    0% {
+        opacity: 0;
+        max-height: 0px;
+    }
+    100% {
+        opacity: 1;
+        max-height: 1000px;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 1;
+        max-height: 100px;
+    }
+    100% {
+        opacity: 0;
+        max-height: 0px;
+    }
+}
+
 #shesolves {
     width: 99vw;
     height: auto;

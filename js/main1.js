@@ -1,6 +1,6 @@
 //loader
 $(window).load(function() {
-    $("#loading").fadeOut(1000);
+    $(".loading").fadeOut(1000);
     $("body").css("overflow-y", "visible");
     $(".titl").slideDown(1000);
     $(".parg").slideDown(1000);
@@ -12,8 +12,10 @@ jQuery(document).ready(function() {
     $(".titl").hide();
     $(".parg").hide();
     $("#men2").css("opacity", "0");
+    $("#men22").css("opacity", "0");
     $("#tobeshownnn").hide();
     $("#men2").css("max-height", "0px");
+    $("#men22").css("max-height", "0px");
     $("#tobeshown2").hide();
     if (window.location.href.indexOf("signup") > -1) {
         $("#tobehidden").css("animation", "goLeft 1s ease-in-out forwards");
@@ -32,9 +34,15 @@ jQuery(document).ready(function() {
 
     }
     if (window.location.href.indexOf("index") > -1) {
+
         $('a[href*=\\#]').on('click', function(event) {
             event.preventDefault();
-            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+            if (window.location.href.indexOf("signup") > -1) {
+
+            } else {
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+            }
+
         });
 
     }
@@ -177,10 +185,8 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function() {
-    var hT = $('#det').offset().top,
-        hH = $('#det').outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
+    var
+        wS = $(window).scrollTop();
     if (wS <= 0) {
         $("#men2").css("animation", "slideUp 1s forwards ");
         $("#men1").css("animation", "slideDown 1s forwards ");
@@ -195,6 +201,23 @@ $(window).scroll(function() {
         $("#men1").css("z-index", "1 ");
     }
 });
+setInterval(function() {
+    var
+        wS = $(window).scrollTop();
+    if (wS <= 0) {
+        $("#men2").css("animation", "slideUp 1s forwards ");
+        $("#men1").css("animation", "slideDown 1s forwards ");
+        $("#men2").css("z-index", "1 ");
+
+        $("#men1").css("z-index", "10 ");
+    } else {
+
+        $("#men1").css("animation", "slideUp 1s forwards ");
+        $("#men2").css("z-index", "10 ");
+        $("#men2").css("animation", "slidedown 1s forwards");
+        $("#men1").css("z-index", "1 ");
+    }
+}, 20);
 $(window).scroll(function() {
     var hT = $('.map').offset().top,
         hH = $('.map').outerHeight(),
