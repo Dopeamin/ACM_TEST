@@ -5,10 +5,7 @@ $(window).load(function() {
     $(".titl").slideDown(1000);
     $(".parg").slideDown(1000);
 });
-$('a[href*=\\#]').on('click', function(event) {
-    event.preventDefault();
-    $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
-});
+
 
 jQuery(document).ready(function() {
 
@@ -32,6 +29,13 @@ jQuery(document).ready(function() {
             $("#tobeshown2").css("animation", "goRight 0s reverse forwards");
         }
     } else {
+
+    }
+    if (window.location.href.indexOf("index") > -1) {
+        $('a[href*=\\#]').on('click', function(event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+        });
 
     }
 
