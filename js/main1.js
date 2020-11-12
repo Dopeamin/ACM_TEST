@@ -128,19 +128,26 @@ jQuery(document).ready(function() {
     }, 20);
     setInterval(function() {
         if ($(window).width() < 900) {
+            $("#tohidee").hide();
             $("#tobehidden").hide();
+            $("#togrow").css("width", "100%");
             $("#tobeshown").css("width", "100%");
             $("#tobeshown2").css("width", "100%");
             $("#tobeshown2").css("animation", "goRight 0s reverse forwards");
             $(".foot").show();
             $("#tobeshownn").show();
+            $("#l2").css("display", "block");
+            $("#l1").css("height", "fit-content");
         } else {
-            $("#tobehidden").show();
+            $("#tohidee").show();
+            $("#togrow").css("width", "70%");
+            $("#tohide").hide();
             $("#tobeshown2").css("animation", "goRight 0s  forwards");
             $("#tobeshown").css("width", "60%");
             $("#tobeshown2").css("width", "60%");
             $(".foot").hide();
             $("#tobeshownn").hide();
+            $("#l2").css("display", "flex")
         }
     }, 20);
 });
